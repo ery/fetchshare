@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    title =itext(:header)
+    link rel="shortcut icon" href="/favicon.ico"
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  body
+    .container
+      = yield
+      .footer
+        p www.FetchShare.com

@@ -1,0 +1,27 @@
+.header
+  ul class="nav nav-pills pull-right"
+    li class="active"
+      a href=fetch_path =itext(:fetch)
+    li
+      a href=share_path =itext(:share)
+  h3 class="text-muted" =itext(:header)
+
+= render partial: 'alert'
+
+ol class="breadcrumb"
+  li
+    a href=fetch_path 根目录
+  - if @archive.folder
+    li class="active"
+      a href=fetch_path(location: @archive.folder.name) =@archive.folder.name
+
+.jumbotron
+  h1 = @archive.smart_name
+
+  - if @archive.file_origin_name.present?
+    p
+      a class="btn btn-lg btn-danger" href= download_archive_path(@archive) role="button" =itext(:download)
+    p = @archive.file_origin_name
+
+- if @archive.content.present?
+  pre = @archive.content

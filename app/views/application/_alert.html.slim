@@ -1,0 +1,12 @@
+
+- if flash.now[:error]
+  div class="alert alert-danger"
+    button type="button" class="close" data-dismiss="alert" aria-hidden="true" &times;
+    strong 亲 :
+    = flash.now[:error]
+
+- if flash.now[:notice]
+  div class="alert alert-info"
+    button type="button" class="close" data-dismiss="alert" aria-hidden="true" &times;
+    strong 亲 :
+    = flash.now[:notice]
