@@ -8,10 +8,10 @@ ol class="breadcrumb"
 .jumbotron
   h1 = @archive.smart_name
 
-  - if @archive.file_origin_name.present?
-    p
-      a class="btn btn-lg btn-danger" href= download_archive_path(@archive) role="button" =itext(:download)
-    p = @archive.file_origin_name
+div class="well" style="max-width: 400px; margin: 0 auto 10px;"
+  - if @archive.is_include_file?
+    a class="btn btn-lg btn-block btn-danger" href=download_archive_path(@archive) =itext(:download)
+  a class="btn btn-lg btn-block btn-primary"href=archive_path(@archive) rel="nofollow" data-confirm=itext(:ask_delete) data-method="delete" =itext(:delete)
 
 - if @archive.content.present?
   pre = @archive.content

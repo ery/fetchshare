@@ -8,7 +8,7 @@ ol class="breadcrumb"
 .jumbotron
   h1 =itext(:fetch)
   form class="navbar-form"
-    input type="text" class="form-control" placeholder="目录..." name="location" value= params[:location]
+    input type="text" class="form-control" placeholder="目录..." name="location" value=params[:location]
 
 table class="table table-striped"
   thead
@@ -20,9 +20,9 @@ table class="table table-striped"
   tbody
     - @archives.each do |archive|
       tr
-        td = link_to archive.created_at_text, archive_path(archive)
-        td = link_to archive.smart_name,      archive_path(archive)
+        td =link_to archive.created_at_text, archive_path(archive)
+        td =link_to archive.smart_name,      archive_path(archive)
         td
           - if archive.is_include_file?
-            = link_to itext(:download), download_archive_path(archive), :target => "_blank"
-        td = link_to '删除', archive, method: :delete, data: { confirm: 'Are you sure?' }
+            =link_to itext(:download), download_archive_path(archive), :target => "_blank"
+        td =link_to itext(:delete), archive, method: :delete, data: {confirm: itext(:ask_delete)}

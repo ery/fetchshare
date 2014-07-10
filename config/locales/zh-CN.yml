@@ -26,3 +26,5 @@ zh-CN:
   share: 分享
   fetch: 获取
   download: 下载
+  delete: 删除
+  ask_delete: 你确定要删除吗？
