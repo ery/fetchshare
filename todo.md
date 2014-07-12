@@ -1,5 +1,5 @@
 
-
++ 使用云存储文件 S3 七牛
 
 + 删除的时候 删除磁盘文件
 + 脚本 rake remove_overdue_archive 删除过去数据
