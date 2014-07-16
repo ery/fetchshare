@@ -9,6 +9,8 @@ class Archive < ActiveRecord::Base
 
   scope :root, ->{ where(:folder_id => nil) }
 
+  after_destroy :destroy_file
+
   def create_archive(params)
     archive = self
     archive.name     = params[:name]
@@ -34,6 +36,12 @@ class Archive < ActiveRecord::Base
     self.folder = Folder.find_by_name(archive.location)
     unless self.folder
       self.folder = Folder.create!(:name => archive.location)
+    end
+  end
+
+  def destroy_file
+    if self.is_include_file?
+      FileUtils.rm self.file_path
     end
   end
 
