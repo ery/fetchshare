@@ -11,7 +11,7 @@ class ArchivesController < ApplicationController
   def create
     @archive = Archive.new
     @archive.create_archive(params[:archive])
-    redirect_to @archive, notice: 'Share successfully.'
+    redirect_to @archive, notice: itext(:share_ok)
   rescue Exception => exception
     flash.now[:error] = exception.message
     render :new
@@ -24,13 +24,13 @@ class ArchivesController < ApplicationController
   def destroy
     @archive = Archive.find(params[:id])
     @archive.destroy
-    redirect_to fetch_url, notice: 'Archive was successfully destroyed.'
+    redirect_to fetch_url, notice: itext(:destroy_ok)
   end
 
   def download
     @archive = Archive.find(params[:id])
     unless @archive.is_include_file?
-      redirect_to fetch_url, notice: 'Without file.'
+      redirect_to fetch_url, notice: itext(:without_file)
       return
     end
 

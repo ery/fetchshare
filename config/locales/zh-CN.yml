@@ -21,10 +21,12 @@
 
 zh-CN:
   header: FetchShare
-  hello: "Hello world"
   plesase_input_content: 请输入内容
   share: 分享
   fetch: 获取
   download: 下载
   delete: 删除
   ask_delete: 你确定要删除吗？
+  share_ok: 分享成功！
+  destroy_ok: 删除成功!
+  without_file: 没找到文件!
