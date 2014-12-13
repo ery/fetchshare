@@ -1,4 +1,6 @@
 
++ 分享的时候 不用填写名称 第一行内容就是名称
+
 + 支持语言切换
   huoqufenxiang.com => 中文
   fetchshare.com => 英文
