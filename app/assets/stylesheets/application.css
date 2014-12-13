@@ -30,15 +30,14 @@
 
 /* Custom page header */
 .header {
+  height: 60px;
   border-bottom: 1px solid #e5e5e5;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
-  padding-bottom: 19px;
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
 }
 
 /* Custom page footer */
@@ -84,10 +83,6 @@
   .footer {
     padding-right: 0;
     padding-left: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
   }
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
