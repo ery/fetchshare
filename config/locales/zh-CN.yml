@@ -20,7 +20,7 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 zh-CN:
-  header: FetchShare
+  header: 获取分享
   plesase_input_content: 请输入内容
   share: 分享
   fetch: 获取
@@ -38,4 +38,4 @@ zh-CN:
   released_at: 发布时间
   alert_first: "亲: "
   footer_link: "http://www.huoqufenxiang.com"
-  footer_title: www.HuoQuFenXiang.com
+  footer_title: 获取分享 www.HuoQuFenXiang.com
