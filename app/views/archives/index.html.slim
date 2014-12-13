@@ -1,6 +1,7 @@
+
 ol class="breadcrumb"
   li
-    a href=fetch_path 根目录
+    a href=fetch_path =itext(:root_location)
   - if params[:location]
     li class="active"
       a href=fetch_path(location: params[:location]) =params[:location]
@@ -8,7 +9,7 @@ ol class="breadcrumb"
 .jumbotron
   h1 =itext(:fetch)
   form class="navbar-form"
-    input type="text" class="form-control" placeholder="目录..." name="location" value=params[:location]
+    input type="text" class="form-control" placeholder="位置..." name="location" value=params[:location]
 
 table class="table table-striped"
   thead

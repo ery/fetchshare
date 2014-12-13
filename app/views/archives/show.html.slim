@@ -1,6 +1,6 @@
 ol class="breadcrumb"
   li
-    a href=fetch_path 根目录
+    a href=fetch_path 默认位置
   - if @archive.folder
     li class="active"
       a href=fetch_path(location: @archive.folder.name) =@archive.folder.name
