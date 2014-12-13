@@ -1,9 +1,5 @@
-ol class="breadcrumb"
-  li
-    a href=fetch_path =itext(:default_location)
-  - if params[:location]
-    li class="active"
-      a href=fetch_path(location: params[:location]) =params[:location]
+
+= render partial: 'location', locals: {location: params[:location]}
 
 .jumbotron
   h1 =itext(:fetch)
