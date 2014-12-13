@@ -1,6 +1,5 @@
 
 + 脚本 rake remove_overdue_archive 删除过去数据
-+ 文案 目录 改成 位置
 
 + 使用 unicorn
 + 使用云存储文件 S3 七牛
@@ -16,4 +15,5 @@ OK
 + 左上角log(FetchShare) 是超链接 链接 home
 + 下载页面 添加删除按钮
 + 删除的时候 删除磁盘文件
++ 文案 目录 改成 位置
 
