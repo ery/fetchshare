@@ -26,8 +26,14 @@ zh-CN:
   fetch: 获取
   download: 下载
   delete: 删除
+  name: 名称
   ask_delete: 你确定要删除吗？
   share_ok: 分享成功！
   destroy_ok: 删除成功!
   without_file: 没找到文件!
-  root_location: 默认位置
+  default_location: 默认位置
+  location: 位置
+  file: 文件
+  content: 内容
+  released_at: 发布时间
+  alert_first: "亲: "

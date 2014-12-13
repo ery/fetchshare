@@ -4,22 +4,22 @@
 = form_for(@archive, html: {:class => 'form-horizontal', :enctype => 'multipart/form-data'}) do |f|
 
   .form-group
-    label for="location" class="col-sm-2 control-label" 位置
+    label for="location" class="col-sm-2 control-label" =itext(:location)
     .col-sm-10
-      input id="archive_location" name="archive[location]" type="text" class="form-control" placeholder="位置" value=@archive.location
+      input id="archive_location" name="archive[location]" type="text" class="form-control" placeholder=itext(:location) value=@archive.location
 
   .form-group
-    label for="name" class="col-sm-2 control-label" 名称
+    label for="name" class="col-sm-2 control-label" =itext(:name)
     .col-sm-10
-      input id="archive_name" name="archive[name]" type="text" class="form-control" placeholder="名称" value=@archive.name
+      input id="archive_name" name="archive[name]" type="text" class="form-control" placeholder=itext(:name) value=@archive.name
 
   .form-group
-    label for="content" class="col-sm-2 control-label" 内容
+    label for="content" class="col-sm-2 control-label" =itext(:content)
     .col-sm-10
-      textarea rows="3" id="archive_name" name="archive[content]" type="text" class="form-control" placeholder="内容" =@archive.content
+      textarea rows="3" id="archive_name" name="archive[content]" type="text" class="form-control" placeholder=itext(:content) =@archive.content
 
   .form-group
-    label for="content" class="col-sm-2 control-label" 附件
+    label for="content" class="col-sm-2 control-label" =itext(:file)
     .col-sm-10
       input type="file" id="archive_file" name="archive[file]"
 

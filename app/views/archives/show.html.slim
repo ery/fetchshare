@@ -1,6 +1,6 @@
 ol class="breadcrumb"
   li
-    a href=fetch_path 默认位置
+    a href=fetch_path =itext(:default_location)
   - if @archive.folder
     li class="active"
       a href=fetch_path(location: @archive.folder.name) =@archive.folder.name

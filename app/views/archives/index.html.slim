@@ -1,7 +1,6 @@
-
 ol class="breadcrumb"
   li
-    a href=fetch_path =itext(:root_location)
+    a href=fetch_path =itext(:default_location)
   - if params[:location]
     li class="active"
       a href=fetch_path(location: params[:location]) =params[:location]
@@ -9,13 +8,13 @@ ol class="breadcrumb"
 .jumbotron
   h1 =itext(:fetch)
   form class="navbar-form"
-    input type="text" class="form-control" placeholder="位置..." name="location" value=params[:location]
+    input type="text" class="form-control" placeholder="#{itext(:location)}..." name="location" value=params[:location]
 
 table class="table table-striped"
   thead
     tr
-      th 发布时间
-      th 名称
+      th =itext(:released_at)
+      th =itext(:name)
       th colspan="2"
 
   tbody
