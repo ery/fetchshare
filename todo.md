@@ -1,6 +1,5 @@
 
 + 标题改成 获取分享
-+ 页脚 改成 huoqufenxiang.com
 
 + 支持语言切换
   huoqufenxiang.com => 中文
@@ -23,4 +22,5 @@ OK
 + 下载页面 添加删除按钮
 + 删除的时候 删除磁盘文件
 + 文案 目录 改成 位置
++ 页脚 改成 huoqufenxiang.com
 

@@ -12,4 +12,5 @@ html
       = render partial: 'header'
       = yield
       .footer
-        p www.FetchShare.com
+        p
+          a href=itext(:footer_link) =itext(:footer_title)
