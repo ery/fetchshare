@@ -1,4 +1,11 @@
 
++ 标题改成 获取分享
++ 页脚 改成 huoqufenxiang.com
+
++ 支持语言切换
+  huoqufenxiang.com => 中文
+  fetchshare.com => 英文
+
 + 脚本 rake remove_overdue_archive 删除过去数据
 
 + 使用 unicorn
