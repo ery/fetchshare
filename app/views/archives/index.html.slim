@@ -6,19 +6,20 @@
   form class="navbar-form"
     input type="text" class="form-control" placeholder="#{itext(:location)}..." name="location" value=params[:location]
 
-table class="table table-striped"
-  thead
-    tr
-      th =itext(:released_at)
-      th =itext(:name)
-      th colspan="2"
-
-  tbody
-    - @archives.each do |archive|
+- if @archives.count > 0
+  table class="table table-striped"
+    thead
       tr
-        td =link_to archive.created_at_text, archive_path(archive)
-        td =link_to archive.smart_name,      archive_path(archive)
-        td
-          - if archive.is_include_file?
-            =link_to itext(:download), download_archive_path(archive), :target => "_blank"
-        td =link_to itext(:delete), archive, method: :delete, data: {confirm: itext(:ask_delete)}
+        th =itext(:released_at)
+        th =itext(:name)
+        th colspan="2"
+
+    tbody
+      - @archives.each do |archive|
+        tr
+          td =link_to archive.created_at_text, archive_path(archive)
+          td =link_to archive.smart_name,      archive_path(archive)
+          td
+            - if archive.is_include_file?
+              =link_to itext(:download), download_archive_path(archive), :target => "_blank"
+          td =link_to itext(:delete), archive, method: :delete, data: {confirm: itext(:ask_delete)}
