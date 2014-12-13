@@ -1,6 +1,4 @@
 
-+ 标题改成 获取分享
-
 + 支持语言切换
   huoqufenxiang.com => 中文
   fetchshare.com => 英文
@@ -24,3 +22,4 @@ OK
 + 文案 目录 改成 位置
 + 页脚 改成 huoqufenxiang.com
 
++ 标题改成 获取分享
