@@ -1,5 +1,5 @@
 
-+ 脚本 rake remove_overdue_archive 删除过去数据
++ 脚本 rake cleaner 删除过去数据
 
 + 支持语言切换
   huoqufenxiang.com => 中文

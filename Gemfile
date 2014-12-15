@@ -13,3 +13,4 @@ gem 'pry-rails',          '0.2.2'
 gem 'slim-rails',         '2.1.5'
 gem 'coffee-rails',       '4.0.1'
 gem 'therubyracer',       '0.12.1', platforms: :ruby
+gem 'god',                '0.13.4'
