@@ -75,7 +75,7 @@ class Archive < ActiveRecord::Base
   end
 
   def file_path
-    return ArchiveFile.get_file_path(self.file_name)
+    return Fetchshare::ArchiveFile.get_file_path(self.file_name)
   end
 
   def is_include_file?
