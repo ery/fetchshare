@@ -17,7 +17,7 @@ class Archive < ActiveRecord::Base
     archive.content  = params[:content]
     archive.location = params[:location]
 
-    ArchiveFile.save_file archive, params[:file]
+    Fetchshare::ArchiveFile.save_file archive, params[:file]
 
     archive.save!
   end
