@@ -2,6 +2,8 @@ namespace :fetchshare do
 
   desc 'Clean'
   task :clean => :environment do
+    $stdout.sync = true
+
     puts "Fetchshare clean"
     puts "=============================="
 
