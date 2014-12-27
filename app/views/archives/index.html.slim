@@ -3,11 +3,11 @@
 
 .jumbotron
   h1 =t(:fetch)
-  form class="navbar-form"
-    input type="text" class="form-control" placeholder="#{t(:location)}..." name="location" value=params[:location]
+  form.navbar-form
+    input.form-control type="text" placeholder="#{t(:location)}..." name="location" value=params[:location]
 
 - if @archives.count > 0
-  table class="table table-striped"
+  table.table.table-striped
     thead
       tr
         th =t(:released_at)
