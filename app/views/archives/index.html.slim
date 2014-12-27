@@ -2,16 +2,16 @@
 = render 'location', location: params[:location]
 
 .jumbotron
-  h1 =itext(:fetch)
+  h1 =t(:fetch)
   form class="navbar-form"
-    input type="text" class="form-control" placeholder="#{itext(:location)}..." name="location" value=params[:location]
+    input type="text" class="form-control" placeholder="#{t(:location)}..." name="location" value=params[:location]
 
 - if @archives.count > 0
   table class="table table-striped"
     thead
       tr
-        th =itext(:released_at)
-        th =itext(:name)
+        th =t(:released_at)
+        th =t(:name)
         th colspan="2"
 
     tbody
@@ -21,5 +21,5 @@
           td =link_to archive.smart_name,      archive_path(archive)
           td
             - if archive.is_include_file?
-              =link_to itext(:download), download_archive_path(archive), :target => "_blank"
-          td =link_to itext(:delete), archive, method: :delete, data: {confirm: itext(:ask_delete)}
+              =link_to t(:download), download_archive_path(archive), :target => "_blank"
+          td =link_to t(:delete), archive, method: :delete, data: {confirm: t(:ask_delete)}
