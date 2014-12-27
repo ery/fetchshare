@@ -1,21 +1,14 @@
 Rails.application.routes.draw do
-  root 'archives#index'
-
-  get 'fetch', to: 'archives#index'
-  get 'share', to: 'archives#new'
-
-  resources :archives do
-    get 'download', on: :member
-  end
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root 'archives#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
+  get 'fetch', to: 'archives#index'
+  get 'share', to: 'archives#new'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
@@ -34,6 +27,9 @@ Rails.application.routes.draw do
   #       get 'sold'
   #     end
   #   end
+  resources :archives do
+    get 'download', on: :member
+  end
 
   # Example resource route with sub-resources:
   #   resources :products do

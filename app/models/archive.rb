@@ -26,7 +26,7 @@ class Archive < ActiveRecord::Base
     return if self.content.present?
     return if self.file_name.present?
 
-    raise itext(:plesase_input_content)
+    raise I18n.t(:plesase_input_content)
   end
 
   def binding_folder

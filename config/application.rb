@@ -23,7 +23,3 @@ module Fetchshare
     config.i18n.default_locale = 'zh-CN'
   end
 end
-
-def itext(*arguments)
-  I18n.t(*arguments)
-end

@@ -2,20 +2,20 @@
 = form_for(@archive, html: {:class => 'form-horizontal', :enctype => 'multipart/form-data'}) do |f|
 
   .form-group
-    label for="file" class="col-sm-2 control-label" =itext(:file)
+    label.control-label.col-sm-2 for="file" =t(:file)
     .col-sm-10
       input type="file" id="file" name="archive[file]"
 
   .form-group
-    label for="content" class="col-sm-2 control-label" =itext(:content)
+    label.control-label.col-sm-2 for="content" =t(:content)
     .col-sm-10
-      textarea rows="3" id="content" name="archive[content]" class="form-control" placeholder=itext(:content) =@archive.content
+      textarea rows="3" id="content" name="archive[content]" class="form-control" placeholder=t(:content) =@archive.content
 
   .form-group
-    label for="location" class="col-sm-2 control-label" =itext(:location)
+    label.control-label.col-sm-2 for="location" =t(:location)
     .col-sm-10
-      input type="text" id="location" name="archive[location]" class="form-control" placeholder=itext(:location) value=@archive.location
+      input.form-control type="text" id="location" name="archive[location]" placeholder=t(:location) value=@archive.location
 
   .form-group
-    .col-sm-offset-2 class="col-sm-10"
-      button type="submit" class="btn btn-danger" =itext(:share)
+    .col-sm-offset-2.col-sm-10
+      button.btn.btn-danger type="submit" =t(:share)
