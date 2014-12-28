@@ -1,11 +1,12 @@
 
++ 支持语言切换
+    + huoqufenxiang.com 显示 中文
+    + fetchshare.com 显示 英文
+
 
 + 使用 unicorn
-+ 文件下载 基于 nginx
 
-+ 支持语言切换
-  huoqufenxiang.com => 中文
-  fetchshare.com => 英文
++ 文件下载 基于 nginx
 
 + 使用云存储文件 S3 七牛
 
