@@ -1,14 +1,21 @@
 {
-	"folders":
-	[
-		{
-			"path": ".",
-			"folder_exclude_patterns": [".bundle",".idea","tmp",".capistrano","log","public/assets"],
-			"file_exclude_patterns": ["*.sublime-workspace"]
-		}
-	],
-    "settings":
+  "folders":
+  [
     {
-        "tab_size": 2
+      "path": ".",
+      "folder_exclude_patterns": [
+        ".bundle",
+        ".idea",
+        "tmp",
+        ".capistrano",
+        "log",
+        "public/assets"
+        ],
+      "file_exclude_patterns": ["*.sublime-workspace"]
     }
+  ],
+  "settings":
+  {
+    "tab_size": 2
+  }
 }
